@@ -1,8 +1,19 @@
 public class Main {
 
-    public static void main(String[] args){
-        Second obj = new Second();
+    // methods are declared within a class
 
-        System.out.println(obj.x);
+    public void fullThrottle(){
+        System.out.println("Car is moving at top speed!");
+    }
+
+    public void maxSpeed(int maxSpeed){
+        System.out.println("Max speed"+maxSpeed);
+    }
+    public static void main(String[] args){
+        
+
+        Main myCar = new Main();
+        myCar.fullThrottle();
+        myCar.maxSpeed(120);
     }
 }
