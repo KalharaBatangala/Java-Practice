@@ -1,24 +1,14 @@
-
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Main {
-    public static void main(String[] args){
-     
-    int x = 5;
-    double y = 5.2;
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        System.out.println("Current Date is: "+today);
 
-    System.out.println("plus Function with int: "+plusFunction(x));
-    System.out.println("plus Function with double "+plusFunction(y));
-
-    }  
-
-
-    static int plusFunction(int x){
-        return ++x;
+        // local time
+        LocalTime timenow = LocalTime.now();
+        System.out.println("Current time is: "+timenow);
     }
-
-    static double plusFunction(double x){
-        return ++x;
-    }
+    
 }
-
-
